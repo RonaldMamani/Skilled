@@ -1,0 +1,251 @@
+:root{
+    --blue-dark: #13183F;
+    --rose: #F74780;
+    --white: #FFFFFF;
+    --gray: #83869A;
+    --blue-white: #666CA3;
+    --rose-white: #FFA7C3;
+
+    --gradiend1: #F02AA6;
+    --gradiend2: #FF6F48;
+    --gradiend3: #4851FF;
+    --gradiend4: #F02AA6;
+
+    --fonte: "Plus Jakarta Sans", sans-serif;
+
+    --headingXL: 56px;
+    --headingL: 40px;
+    --headingM: 32px;
+    --headingS: 24px;
+
+    --bodyM: 18px;
+    --bodyS: 16px;
+}
+body{
+    font-family: var(--fonte);
+    color: var(--gray);
+}
+.header{
+    margin: auto;
+    align-items: center;
+    padding-top: 2em;
+
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+}
+.button{
+    border-radius: 20px;
+    width: 140px;
+    padding: 1em;
+    
+    color: var(--white);
+    border: 0px;
+}
+.blue-dark{
+    background-color: var(--blue-dark);
+}
+.introduction{
+    display: flex;
+    gap: 3em;
+    align-items: center;
+}
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+.bold{
+    color: var(--blue-dark);
+}
+.title{
+    font-size: var(--headingXL);
+    font-weight: 800;
+}
+.intro-p{
+    font-size: var(--bodyM);
+}
+.gradiend{
+    background-image: linear-gradient(#FF6F48, #F02AA6);
+}
+.disciplines{
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-bottom: 6em;
+}
+.check{
+    font-size: var(--headingM);
+    font-weight: 600;
+    margin: 40px 40px 0 20px;
+    color: var(--white);
+}
+.card-gradiend{
+    background-image: linear-gradient(#FF6F48, #F02AA6);
+    border-radius: 10px;
+    margin-top: 2em;
+}
+.d-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    margin: 0 1em 1em 1em;
+    max-width: 310px;
+}
+.img-oval{
+    width: 56px;
+}
+.t-card{
+    font-size: var(--headingM);
+    font-weight: 800;
+}
+.rose{
+    color: var(--rose);
+    font-size: var(--headingS);
+}
+.footer{
+    background-color: var(--blue-dark);
+    min-height: 90px;
+    padding-top: 40px;
+    align-items: center;
+}
+.footer div{
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+.purple{
+    background-image: linear-gradient(#4851ff,#F02AA6);
+}
+.blue-dark:hover{
+    background-color: var(--blue-white);
+}
+.purple:hover{
+    background-color: violet;
+}
+.gradiend:hover{
+    opacity: 40%;
+}
+
+@media (min-width: 1440px ){
+    .header, .disciplines, .footer div{
+        width: 70%;
+    }
+    .introduction{
+        margin-left: 15%;
+    }
+    .img-desktop{
+        display: block;
+        position: relative;
+        left: 200px;
+        bottom: 160px;
+    }
+    .img-tablet{
+        display: none;
+    }
+    .img-mobile{
+        display: none;
+    }
+    .card-gradiend{
+        width: 350px;
+        min-height: 300px;
+    }
+    .d-card{
+        width: 350px;
+        min-height: 348px;
+    }
+}
+
+@media (max-width: 1440px ){
+    .header, .disciplines, .footer div{
+        width: 70%;
+    }
+    .introduction{
+        margin-left: 15%;
+    }
+    .img-desktop{
+        display: block;
+        position: relative;
+        left: 200px;
+        bottom: 160px;
+    }
+    .img-tablet{
+        display: none;
+    }
+    .img-mobile{
+        display: none;
+    }
+    .card-gradiend{
+        width: 350px;
+        min-height: 300px;
+    }
+    .d-card{
+        width: 350px;
+        min-height: 348px;
+    }
+}
+
+@media (max-width: 768px){
+    .header, .disciplines, .footer div{
+        width: 85%;
+    }
+    .introduction{
+        margin-left: 5%;
+    }
+    .img-desktop{
+        display: none;
+    }
+    .img-tablet{
+        display: block;
+        position: relative;
+        left: 10px;
+        bottom: 150px;
+    }
+    .img-mobile{
+        display: none;
+    }
+    .card-gradiend{
+        width: 320px;
+        min-height: 300px;
+    }
+    .d-card{
+        width: 320px;
+        min-height: 348px;
+    }
+}
+
+@media (max-width: 375px){
+    .header, .disciplines, .footer div{
+        width: 90%;
+    }
+    .introduction{
+        margin: 2em 0 0 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-desktop{
+        display: none;
+    }
+    .img-tablet{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+    }
+    .card-gradiend{
+        min-height: 100px;
+    }
+    .d-card{
+        min-height: 283px;
+    }
+    .footer{
+        min-height: 100px;
+    }
+}
